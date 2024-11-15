@@ -44,7 +44,7 @@
         function handleSubmit(event) {
             event.preventDefault();
             const ip = document.getElementById('ipInput').value;
-            window.location.href = `spam.html?ip=${encodeURIComponent(ip)}`;
+            window.open(`spam.html?ip=${encodeURIComponent(ip)}`, '_blank');
         }
     </script>
 
